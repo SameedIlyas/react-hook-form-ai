@@ -5,7 +5,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/',
+  base: '/react-hook-form-ai/',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
