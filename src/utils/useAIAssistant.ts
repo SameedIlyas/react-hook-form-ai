@@ -116,7 +116,7 @@ export function useAIAssistant({
       // Check first provider in execution order
       const firstProviderType = effectiveConfig.executionOrder[0];
       const firstProvider = effectiveConfig.providers.find(p => p.type === firstProviderType);
-      
+
       if (firstProvider) {
         const { createAIProvider } = await import('../aiProviders');
         const provider = createAIProvider(firstProvider);
@@ -259,10 +259,10 @@ JSON object:`;
 
     if (response.ok) {
       const data = await response.json();
-      const parsed = typeof data.autofillData === 'string' 
-        ? JSON.parse(data.autofillData) 
+      const parsed = typeof data.autofillData === 'string'
+        ? JSON.parse(data.autofillData)
         : data.autofillData;
-      
+
       if (typeof parsed === 'object' && parsed !== null) {
         return parsed as AutofillData;
       }

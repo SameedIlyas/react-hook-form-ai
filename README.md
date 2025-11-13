@@ -15,6 +15,8 @@
 
 A drop-in replacement for React Hook Form with AI-powered autofill and field suggestions. Supports Chrome Built-in AI, OpenAI, and custom AI providers with automatic fallback.
 
+**[📖 View Interactive Demo & Examples](https://grayhatdevelopers.github.io/react-hook-form-ai/)**
+
 ### Features
 
 - **AI-Powered Autofill**: Generate realistic form data using AI
